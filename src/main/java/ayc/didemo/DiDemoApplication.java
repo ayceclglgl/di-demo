@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 
 import ayc.didemo.controllers.ConstructorInjectedController;
 import ayc.didemo.controllers.MyController;
+import ayc.didemo.controllers.PrimaryConstructorInjectedController;
 import ayc.didemo.controllers.PropertyInjectedController;
 import ayc.didemo.controllers.SetterInjectedController;
 
@@ -15,11 +16,11 @@ public class DiDemoApplication {
 		//Spring Context Demo
 		ApplicationContext context = SpringApplication.run(DiDemoApplication.class, args);
 		MyController myController = (MyController) context.getBean("myController");
-		myController.hello();
-		context.getBean(MyController.class).hello();
+		myController.hello();//context.getBean(MyController.class).hello();
 		
 		//DI demo
 		System.out.println(context.getBean(PropertyInjectedController.class).sayHello());
+		System.out.println(context.getBean(PrimaryConstructorInjectedController.class).sayHello());
 		System.out.println(context.getBean(SetterInjectedController.class).sayHello());
 		System.out.println(context.getBean(ConstructorInjectedController.class).sayHello());
 		
