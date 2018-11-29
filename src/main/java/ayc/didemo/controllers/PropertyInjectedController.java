@@ -8,10 +8,10 @@ import ayc.didemo.services.GreetingService;
 @Controller
 public class PropertyInjectedController {
 	@Autowired
-	public GreetingService greetingService;
+	public GreetingService greetingServiceImpl;
 
 	public String sayHello() {
-		return greetingService.sayGreeting();
+		return greetingServiceImpl.sayGreeting();
 	}
 
 }
