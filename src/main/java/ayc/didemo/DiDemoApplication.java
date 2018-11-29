@@ -11,7 +11,6 @@ import ayc.didemo.controllers.SetterInjectedController;
 
 @SpringBootApplication
 public class DiDemoApplication {
-//Spring context demo???
 	public static void main(String[] args) {
 		//Spring Context Demo
 		ApplicationContext context = SpringApplication.run(DiDemoApplication.class, args);
