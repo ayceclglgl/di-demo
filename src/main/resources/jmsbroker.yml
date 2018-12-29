@@ -1,0 +1,7 @@
+jmsusername: user
+jmspassword: "**"
+
+jms:
+  broker:
+    name: jmsbrokerusername
+    pass: jmsbrokerpassword

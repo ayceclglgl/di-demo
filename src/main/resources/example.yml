@@ -1,0 +1,41 @@
+#comment 
+name: Mark
+
+names: #comment
+  - John
+  - Paul
+  - Ringo
+names2: 
+  John2
+  Paul2
+  Ringo2
+  
+dolar_sign: "$"
+
+book:
+  author: Joe Buck
+  publisher: random house
+
+
+truth: yes
+another_truth: True #boolean
+more_true: true #boolean
+false: no #no, NO, false, FALSE --> evety value is evaluated as boolean and as false
+
+string_val: "This is it's quote"
+colon_string: "my cources: math english german"
+
+include_new_lines: | #pipe charactes indicates that, read in everything.
+  fdf ffff
+  fff ffhhh jhjkjjkjk
+  dfdf ggfg
+  ddd
+  d
+
+ignore_new_lines: > # > character --> ignore new lines
+  this is
+  just one long
+  string without new lines 
+
+
+--- #file separator for yaml 
